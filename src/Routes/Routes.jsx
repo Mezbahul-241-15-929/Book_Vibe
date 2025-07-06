@@ -18,7 +18,8 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        // path: "/", // ❌ remove this
+        loader: ()=>fetch('booksData.json'),
+        path: "/",
         Component: Home,
       },
     ],
