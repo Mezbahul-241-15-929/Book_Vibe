@@ -1,3 +1,5 @@
+// 47-3 Create Banner, Load books data and show all the books
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
