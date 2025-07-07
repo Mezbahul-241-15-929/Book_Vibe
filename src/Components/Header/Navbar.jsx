@@ -1,16 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Navbar = () => {
     const Links = <>
         <ul className='flex gap-10'>
-            <li>Home</li>
-            <li>Listed Books</li>
-            <li>Pages to Read</li>
+            
+     
+            <Link to='/'><li>Home</li></Link>
+            <Link to='/about'><li>About</li></Link>
         </ul>
     </>
     return (
         <>
-            <div className='flex justify-between'>
+            <div className='flex justify-between text-black'>
                 <a className="btn btn-ghost text-xl">Book Vibe</a>
                 {Links}
                 <div className="navbar-end">

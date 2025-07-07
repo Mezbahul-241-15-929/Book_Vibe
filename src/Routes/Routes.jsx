@@ -8,6 +8,7 @@ import {
 import ErrorPage from '../pages/ErrorPage/ErrorPage';
 import Home from '../pages/Home/Home';
 import Root from '../pages/Roots/Root';
+import About from '../pages/About/About';
 
 
 export const router = createBrowserRouter([
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
         path: "/",
         Component: Home,
       },
+      {
+        path: '/about',
+        Component:About,
+      }
     ],
   },
 ]);
